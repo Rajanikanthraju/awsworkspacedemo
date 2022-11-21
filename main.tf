@@ -22,7 +22,7 @@ resource "aws_subnet" "subnets" {
     availability_zone = var.subnet_az[count.index]
     tags = {
       "Name" = var.subnet_tags[count.index]
-       Environment= terraform.workspace
+       Environment = terraform.workspace
     }
   
 }
